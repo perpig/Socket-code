@@ -22,10 +22,12 @@ int main()
     }
 
     //-----------------------------绑定socket和端口号--------------------------------
-    // struct sockaddr {
-    //                   sa_family_t sa_family;
-    //                  char sa_data[14];
+    // struct sockaddr
+    // {
+    //      sa_family_t sa_family;  /* 地址族 (Address Family)*/
+    //      char sa_data[14];        /* 地址数据 (Address Data)*/
     // };
+    //
     // struct sockaddr_in
     // {
     //     sa_family_t sin_family;  /* 协议族 */
@@ -70,6 +72,7 @@ int main()
         //---------------------------------接受来自客户端的连接请求------------------------------
         // int accept(int sockfd, struct sockaddr *addr, socklen_t *addrlen);
         // 参数 addr 是一个传出参数，参数 addr 用来返回已连接的客户端的 IP 地址与端口号等这些信息。
+        cout << "本服务器ip:" << inet_ntoa(socket_addr.sin_addr) << endl;
         cout << "等待连接...\n";
         client = accept(socket_fd, (struct sockaddr *)&client_addr, (socklen_t *)&client_addrlen);
         if (client == -1)
@@ -95,13 +98,16 @@ int main()
         //---------------------------------发送数据给对方（响应）------------------------------
         // 写入信息
         char sentData[255];
+        cout << "键入发送信息:";
         cin >> sentData;
-        ssize_t bytes_written = write(client, sentData, strlen(sentData));
-        if (bytes_written < 0)
-        {
-            perror("write error.");
-            continue;
-        }
+
+        // ssize_t bytes_written = write(client, sentData, strlen(sentData));
+        // if (bytes_written < 0)
+        // {
+        //     perror("write error.");
+        //     continue;
+        // }
+
         // 发送信息
         // ssize_t send(int sockfd, const void *buf, size_t len, int flags);
         if (send(client, sentData, strlen(sentData), 0) < 0)
