@@ -1,0 +1,2 @@
+# Hashes of file build rules.
+4cc68a1d79d5f005d82b8974530bfd10 CMakeFiles/Socket_Qt_autogen

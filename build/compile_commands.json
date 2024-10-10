@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I\"/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/build/Socket_Qt_autogen/include\" -isystem /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/opt/qt/lib -isystem /opt/homebrew/opt/qt/lib/QtCore.framework/Headers -isystem /opt/homebrew/opt/qt/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/opt/qt/include -isystem /opt/homebrew/opt/qt/lib/QtGui.framework/Headers -isystem /opt/homebrew/opt/qt/lib/QtNetwork.framework/Headers -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -o CMakeFiles/Socket_Qt.dir/Socket_Qt_autogen/mocs_compilation.cpp.o -c \"/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/build/Socket_Qt_autogen/mocs_compilation.cpp\"",
+  "file": "/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/build/Socket_Qt_autogen/mocs_compilation.cpp",
+  "output": "CMakeFiles/Socket_Qt.dir/Socket_Qt_autogen/mocs_compilation.cpp.o"
+},
+{
+  "directory": "/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_WIDGETS_LIB -I\"/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/build/Socket_Qt_autogen/include\" -isystem /opt/homebrew/opt/qt/lib/QtWidgets.framework/Headers -iframework /opt/homebrew/opt/qt/lib -isystem /opt/homebrew/opt/qt/lib/QtCore.framework/Headers -isystem /opt/homebrew/opt/qt/share/qt/mkspecs/macx-clang -isystem /opt/homebrew/opt/qt/include -isystem /opt/homebrew/opt/qt/lib/QtGui.framework/Headers -isystem /opt/homebrew/opt/qt/lib/QtNetwork.framework/Headers -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk -mmacosx-version-min=13.6 -o CMakeFiles/Socket_Qt.dir/gpt_socket_qt.cpp.o -c \"/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/gpt_socket_qt.cpp\"",
+  "file": "/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/gpt_socket_qt.cpp",
+  "output": "CMakeFiles/Socket_Qt.dir/gpt_socket_qt.cpp.o"
+}
+]

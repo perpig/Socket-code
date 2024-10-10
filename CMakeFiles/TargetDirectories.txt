@@ -1,0 +1,4 @@
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/CMakeFiles/Socket_Qt.dir
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/CMakeFiles/edit_cache.dir
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/CMakeFiles/rebuild_cache.dir
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/CMakeFiles/Socket_Qt_autogen.dir
