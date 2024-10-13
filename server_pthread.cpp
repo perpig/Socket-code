@@ -1,3 +1,4 @@
+// server_pthread.cpp
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
@@ -7,12 +8,16 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <pthread.h>
+#include <mutex>
 
 using namespace std;
+
+std::mutex io_mutex; // 用来保护标准输入输出
 
 void *handle_client(void *client_socket)
 {
     int client = *(int *)client_socket;
+    delete (int *)client_socket; // 提前释放指针，避免重复释放
     char revData[255];
 
     while (true)
@@ -23,12 +28,20 @@ void *handle_client(void *client_socket)
             perror("recv error or client disconnected.");
             break;
         }
-        cout << "显示接收数据：" << revData << endl;
+
+        // 锁定输出以避免多个线程同时输出
+        {
+            std::lock_guard<std::mutex> lock(io_mutex);
+            cout << "显示接收数据：" << revData << endl;
+        }
 
         // 发送回应
         char sentData[255];
-        cout << "键入发送信息: ";
-        cin >> sentData;
+        {
+            std::lock_guard<std::mutex> lock(io_mutex);
+            cout << "键入发送信息: ";
+            cin >> sentData;
+        }
 
         if (send(client, sentData, strlen(sentData), 0) < 0)
         {
@@ -37,8 +50,7 @@ void *handle_client(void *client_socket)
         }
     }
 
-    close(client);
-    delete (int *)client; // 清理内存
+    close(client); // 关闭客户端 socket
     return nullptr;
 }
 
@@ -85,12 +97,14 @@ int main()
 
         cout << "接受到一个连接: " << inet_ntoa(client_addr.sin_addr) << endl;
 
+        // 创建线程来单独处理
         pthread_t tid;
         if (pthread_create(&tid, nullptr, handle_client, client) != 0)
         {
             perror("pthread_create error.");
             close(*client);
             delete client; // 清理内存
+            continue;
         }
         pthread_detach(tid); // 分离线程，自动回收资源
     }

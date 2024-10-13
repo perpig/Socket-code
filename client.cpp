@@ -1,4 +1,4 @@
-// client 客户端
+// client.cpp
 #include <iostream>
 #include <cstring>     // 包含 memset
 #include <cstdlib>     // 包含 exit
@@ -24,7 +24,7 @@ int main()
         }
 
         //------------------------------登陆服务器 创建连接------------------------------
-        cout << "输入服务器ip:" << endl;
+        cout << "输入服务器ip:";
         string server_ip; // 用于临时存储输入的服务器ip
         cin >> server_ip;
 

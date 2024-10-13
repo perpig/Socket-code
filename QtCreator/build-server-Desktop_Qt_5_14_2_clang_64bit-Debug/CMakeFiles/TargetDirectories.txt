@@ -1,0 +1,4 @@
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/QtCreator/build-server-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/server.dir
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/QtCreator/build-server-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/edit_cache.dir
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/QtCreator/build-server-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/QtCreator/build-server-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/server_autogen.dir

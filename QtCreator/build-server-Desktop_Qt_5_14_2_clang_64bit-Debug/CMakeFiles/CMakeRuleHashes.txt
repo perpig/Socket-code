@@ -1,0 +1,3 @@
+# Hashes of file build rules.
+d924d732ed2976280274b0a261249ef3 /Users/kongxinyi/Desktop/点击打开小猪的世界/好好学习/计算机/专业课/计算机网络/实验/实验二 Socket/QtCreator/server/server_zh_CN.ts
+55cf57f2e6caa3f3a4ede3a30863cbdf CMakeFiles/server_autogen

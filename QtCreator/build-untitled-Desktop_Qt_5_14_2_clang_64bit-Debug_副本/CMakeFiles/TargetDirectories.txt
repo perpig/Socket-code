@@ -1,0 +1,4 @@
+/Users/kongxinyi/Desktop/build-untitled-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/untitled.dir
+/Users/kongxinyi/Desktop/build-untitled-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/edit_cache.dir
+/Users/kongxinyi/Desktop/build-untitled-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/rebuild_cache.dir
+/Users/kongxinyi/Desktop/build-untitled-Desktop_Qt_5_14_2_clang_64bit-Debug/CMakeFiles/untitled_autogen.dir
