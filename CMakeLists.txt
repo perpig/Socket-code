@@ -1,24 +1,53 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.5)
 
-project(Socket_Qt)
+project(untitled LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-# 启用自动 MOC
+set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 
-# 添加源文件
-add_executable(Socket_Qt gpt_socket_qt.cpp)
+# set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 找到 Qt 库
-find_package(Qt6 REQUIRED COMPONENTS Widgets Network)
+# QtCreator supports the following variables for Android, which are identical to qmake Android variables.
+# Check http://doc.qt.io/qt-5/deployment-android.html for more information.
+# They need to be set before the find_package(Qt5 ...) call.
 
-# 包含 Qt 头文件路径
-include_directories(${Qt6_INCLUDE_DIRS})
+#if(ANDROID)
+#    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
+#    if (ANDROID_ABI STREQUAL "armeabi-v7a")
+#        set(ANDROID_EXTRA_LIBS
+#            ${CMAKE_CURRENT_SOURCE_DIR}/path/to/libcrypto.so
+#            ${CMAKE_CURRENT_SOURCE_DIR}/path/to/libssl.so)
+#    endif()
+#endif()
 
-# 将 Qt 库链接到目标
-target_link_libraries(Socket_Qt Qt6::Widgets Qt6::Network)
+# 找到 Qt5 的 Widgets 和 Network 组件
+find_package(Qt5 COMPONENTS Widgets Network LinguistTools REQUIRED)
 
-# cmake --build . --target clean
-# cmake .
-# make
+set(TS_FILES untitled_zh_CN.ts)
+
+if(ANDROID)
+  add_library(untitled SHARED
+    main.cpp
+    widget.cpp
+    widget.h
+    widget.ui
+    ${TS_FILES}
+  )
+else()
+  add_executable(untitled
+    main.cpp
+    widget.cpp
+    widget.h
+    widget.ui
+    ${TS_FILES}
+  )
+endif()
+
+# 链接 Widgets 和 Network 库
+target_link_libraries(untitled PRIVATE Qt5::Widgets Qt5::Network)
+
+qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
