@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>519</width>
-    <height>358</height>
+    <width>516</width>
+    <height>478</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,10 +20,10 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>10</y>
+     <x>170</x>
+     <y>0</y>
      <width>171</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="font">
@@ -41,20 +41,20 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>70</y>
+     <x>20</x>
+     <y>80</y>
      <width>121</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>输入广播发送信息：</string>
+    <string>输入发送信息：</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>280</x>
      <y>70</y>
      <width>81</width>
      <height>21</height>
@@ -67,8 +67,8 @@
   <widget class="QPushButton" name="SendButton">
    <property name="geometry">
     <rect>
-     <x>390</x>
-     <y>200</y>
+     <x>140</x>
+     <y>230</y>
      <width>113</width>
      <height>32</height>
     </rect>
@@ -84,10 +84,10 @@
   <widget class="QTextEdit" name="sendTextEdit">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>90</y>
+     <x>20</x>
+     <y>100</y>
      <width>231</width>
-     <height>111</height>
+     <height>81</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -98,8 +98,8 @@
   <widget class="QPushButton" name="CloseButton">
    <property name="geometry">
     <rect>
-     <x>400</x>
-     <y>0</y>
+     <x>200</x>
+     <y>440</y>
      <width>113</width>
      <height>32</height>
     </rect>
@@ -115,10 +115,10 @@
   <widget class="QTextBrowser" name="recvTextBrowser">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>90</y>
-     <width>231</width>
-     <height>111</height>
+     <x>280</x>
+     <y>100</y>
+     <width>221</width>
+     <height>141</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -130,7 +130,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>230</y>
+     <y>280</y>
      <width>71</width>
      <height>16</height>
     </rect>
@@ -143,9 +143,9 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>250</y>
-     <width>231</width>
-     <height>101</height>
+     <y>310</y>
+     <width>321</width>
+     <height>121</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -156,8 +156,8 @@
   <widget class="QLabel" name="label_7">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>230</y>
+     <x>350</x>
+     <y>250</y>
      <width>91</width>
      <height>16</height>
     </rect>
@@ -169,10 +169,10 @@
   <widget class="QTextBrowser" name="showClientSituation">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>250</y>
-     <width>231</width>
-     <height>101</height>
+     <x>350</x>
+     <y>270</y>
+     <width>151</width>
+     <height>161</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -183,7 +183,7 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>20</x>
+     <x>10</x>
      <y>30</y>
      <width>491</width>
      <height>33</height>
@@ -232,32 +232,6 @@
      </spacer>
     </item>
     <item>
-     <spacer name="horizontalSpacer_4">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <spacer name="horizontalSpacer_3">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
      <spacer name="horizontalSpacer">
       <property name="orientation">
        <enum>Qt::Horizontal</enum>
@@ -292,6 +266,19 @@
      </widget>
     </item>
     <item>
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item>
      <widget class="QPushButton" name="CreateButton">
       <property name="styleSheet">
        <string notr="true">background-color: white;
@@ -303,6 +290,53 @@
      </widget>
     </item>
    </layout>
+  </widget>
+  <widget class="QLineEdit" name="PrivateSendUser">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>190</y>
+     <width>141</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>私发用户名：</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="PrivateSednButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>230</y>
+     <width>113</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;
+</string>
+   </property>
+   <property name="text">
+    <string>私发</string>
+   </property>
   </widget>
  </widget>
  <resources/>

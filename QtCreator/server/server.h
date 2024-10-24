@@ -56,6 +56,8 @@ private slots:
 
     void updateShowClientsLists();
 
+    void on_PrivateSednButton_clicked();
+
 private:
     Ui::server *ui;
     QTcpServer *server_socket;

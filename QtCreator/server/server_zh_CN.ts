@@ -15,7 +15,8 @@
     </message>
     <message>
         <location filename="server.ui" line="51"/>
-        <source>输入广播发送信息：</source>
+        <source>输入发送信息：</source>
+        <oldsource>输入广播发送信息：</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -49,14 +50,24 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="server.ui" line="276"/>
+        <location filename="server.ui" line="250"/>
         <source>端口号：</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="server.ui" line="301"/>
+        <location filename="server.ui" line="288"/>
         <source>开始监听</source>
         <oldsource>创建服务器</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="server.ui" line="321"/>
+        <source>私发用户名：</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="server.ui" line="338"/>
+        <source>私发</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
