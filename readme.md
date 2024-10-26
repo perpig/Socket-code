@@ -36,11 +36,7 @@ make
 编译成功后会生成两个可执行文件server和client。
 
 ### 使用方法
-#### 1. cpp底层逻辑实现可执行文件
-双击打开`server`和`client`的可执行文件
-在客户端输入服务器IP后两边即可双向通行
-![cpp_result.png](cpp_result.png)
-#### 2. QT Crator开发的有界面的可执行文件
+#### 1. QT Crator开发的有界面的可执行文件
 双击打开cmake编译或者Qt creator编译形成的有界面的`server`和`client`的可执行文件：
 
 **服务器** 
@@ -52,7 +48,7 @@ make
 
 关闭服务器按钮将退出
 
-![Qt_server.png](Qt_server.png)
+![Server页面展示.png](Server页面展示.png)
 **客户端**
 输入用户名 连接服务器ip和端口后连接，可以进行双向通行
 几个窗口分别是接受消息，发送服务器消息，
@@ -61,8 +57,15 @@ make
 
 断开连接可以连接其他服务器
 
-![Qt_client.png](Qt_client.png)
+![Client页面展示.png](Client页面展示.png)
 
+**注意：客户端和服务器均可完成私发的功能，并显示私发的用户名称**
+**实现了服务器与客户端的真正的全双工**
+
+#### 2. cpp底层逻辑实现可执行文件
+双击打开`server`和`client`的可执行文件
+在客户端输入服务器IP后两边即可双向通行
+![cpp_result.png](cpp_result.png)
 
 ### 实现环境
 编译器：GCC 9.4.0 / Clang 12.0.0
